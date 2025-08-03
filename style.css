@@ -1,0 +1,116 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1505699261378-c372af38134c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGxhbm8lMjBkZSUyMGZ1bmRvJTIwaGR8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    backdrop-filter: blur(2px);
+
+
+}
+p {
+    font-family: 'Jetbrains mono ', monospace;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+h1 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 2.5em;
+    display: flex;
+    gap: 10px;
+
+}
+.animacao {
+    position: relative;
+    height: 1.2em;
+    overflow: hidden;
+}
+.animacao .lista {
+    display: flex;
+    flex-direction: column;
+    animation: subirPalavras 9s infinite;
+
+}
+.lista span {
+    height: 1.2em;
+    transition: transform 0.5s ease-in-out;
+    color: rebeccapurple;
+}
+@keyframes subirPalavras {
+   0%, 40%{transform: translateY(0);}
+   45%, 70%{transform: translateY(-1.2em);}
+   75%, 95%{transform: translateY(-2.6em);}
+   100% {transform: translateY(0);}
+}
+.img2 {
+   margin-right: 200px;
+}
+h2{
+    text-align: center;
+}
+.conteudo {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecer 1s ease-out forwards;
+
+}
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.img2 {
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    margin-top: 100px;
+
+}
+.img2:hover {
+    transform: scale(1.1);
+
+}
+button {
+    border-radius: 10px;
+    border-color: rgb(255, 0, 255);
+    font-size: 20px;
+
+}
+.butao1 {
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    margin-top: 10px;
+
+}
+.butao1:hover {
+    transform: scale(1.1);
+
+}
+
+form {
+    background: linear-gradient(#ffffff34, #ffffff27);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 32px black;
+    width: 250px;
+    height: 300px;
+}
+.botao1 {
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    margin-top: 10px;
+
+}
+.botao1:hover {
+    transform: scale(1.1);
+
+}
